@@ -50,3 +50,4 @@ if __name__ == "__main__":
         fiche_osm(int(sys.argv[1]))
     print(">>> SCRIPT fiche_osm.py TERMINÉ")
     
+    

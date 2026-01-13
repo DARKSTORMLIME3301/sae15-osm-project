@@ -1,6 +1,5 @@
-print(">>> SCRIPT fiche_osm.py DEMARRÉ")
-import requests
 from md_to_html import convert
+import requests
 import markdown
 def node_to_md(data, filename):
     print(">>> node_to_md APPELÉE")

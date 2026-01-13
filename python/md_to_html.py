@@ -1,5 +1,4 @@
 import markdown
-
 def convert(md_file, html_file):
     """
     Convertit un fichier Markdown en fichier HTML.
@@ -21,3 +20,5 @@ def convert(md_file, html_file):
 # autorise de lancer le programme automatiquement
 if __name__ == "__main__":
     convert("../md/parks_sfax.md", "../html/parks_sfax.html")
+    print(">>> SCRIPT md_to_html.py TERMINÉ")
+    

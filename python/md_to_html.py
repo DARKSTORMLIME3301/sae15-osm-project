@@ -19,6 +19,10 @@ def convert(md_file, html_file):
 
 # autorise de lancer le programme automatiquement depuis la ligne de commande (terminal)
 if __name__ == "__main__":
-    convert("../md/parks_sfax.md", "../html/parks_sfax.html")
+    import sys
+    if len(sys.argv) != 3:
+        print("Usage: python md_to_html.py <input.md> <output.html>")
+    else:
+        convert(sys.argv[1], sys.argv[2])
     print(">>> SCRIPT md_to_html.py TERMINÉ")
 

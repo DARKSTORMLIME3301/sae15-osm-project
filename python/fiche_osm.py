@@ -1,6 +1,7 @@
 from md_to_html import convert
 import requests
 import markdown
+import math
 def node_to_md(data, filename):
     print(">>> node_to_md APPELÉE")
 
@@ -49,4 +50,14 @@ if __name__ == "__main__":
         fiche_osm(int(sys.argv[1]))
     print(">>> SCRIPT fiche_osm.py TERMINÉ")
     
-    
+
+
+def latlon_to_tile(lat, lon, zoom):
+    lat_rad = math.radians(lat)
+    n = 2.0 ** zoom
+    x = int((lon + 180.0) / 360.0 * n)
+    y = int((1.0 - math.log(math.tan(lat_rad) + 1 / math.cos(lat_rad)) / math.pi) / 2.0 * n)
+    return x, y
+
+print(latlon_to_tile(49.18444, -0.35930, 15))
+

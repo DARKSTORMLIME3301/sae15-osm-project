@@ -1,7 +1,7 @@
 # Fiche OpenStreetMap
 
 ## Informations générales
-- Nom : صفاقس
+- Nom : Nom non renseigné
 - Type : Type inconnu
-- Latitude : 34.7394361
-- Longitude : 10.7604024
+- Latitude : 43.4096733
+- Longitude : -121.8351745

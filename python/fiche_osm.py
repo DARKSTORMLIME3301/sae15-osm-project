@@ -1,10 +1,9 @@
 from md_to_html import convert
 import requests
-import markdown
 import math
-def node_to_md(data, filename):
-    print(">>> node_to_md APPELÉE")
+import sys
 
+def node_to_md(data, filename):
     element = data["elements"][0]
     tags = element.get("tags", {})
 
@@ -12,6 +11,8 @@ def node_to_md(data, filename):
     amenity = tags.get("amenity", "Type inconnu")
     lat = element.get("lat")
     lon = element.get("lon")
+    horaire_ouverture = tags.get("opening_hours", "Non renseigné")
+
 
     with open(filename, "w", encoding="utf-8") as f:
         f.write("# Fiche OpenStreetMap\n\n")
@@ -20,18 +21,31 @@ def node_to_md(data, filename):
         f.write(f"- Type : {amenity}\n")
         f.write(f"- Latitude : {lat}\n")
         f.write(f"- Longitude : {lon}\n")
+        f.write(f"- Horaire d'ouverture : {horaire_ouverture}\n\n")
 
 def get_node(osm_id):
-    url = f"https://www.openstreetmap.org/api/0.6/node/{osm_id}.json"
-    response = requests.get(url)
+    url = "https://overpass-api.de/api/interpreter"
+
+    query = f"""
+    [out:json];
+    node({osm_id});
+    out;
+    """
+
+    response = requests.post(url, data=query)
 
     if response.status_code != 200:
-        raise Exception("Erreur lors de la récupération des données OSM")
+        raise Exception("Erreur Overpass API")
 
     return response.json()
 
+
 def fiche_osm(osm_id):
     data = get_node(osm_id)
+
+    if not data.get("elements"):
+        print("Aucun node trouvé.")
+        return
 
     md_file = "../markdown/fiche.md"
     html_file = "../html/fiche.html"
@@ -43,21 +57,7 @@ def fiche_osm(osm_id):
 
 
 if __name__ == "__main__":
-    import sys
     if len(sys.argv) != 2:
         print("Usage: python fiche_osm.py <osm_id>")
     else:
         fiche_osm(int(sys.argv[1]))
-    print(">>> SCRIPT fiche_osm.py TERMINÉ")
-    
-
-
-def latlon_to_tile(lat, lon, zoom):
-    lat_rad = math.radians(lat)
-    n = 2.0 ** zoom
-    x = int((lon + 180.0) / 360.0 * n)
-    y = int((1.0 - math.log(math.tan(lat_rad) + 1 / math.cos(lat_rad)) / math.pi) / 2.0 * n)
-    return x, y
-
-print(latlon_to_tile(49.18444, -0.35930, 15))
-

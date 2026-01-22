@@ -11,6 +11,7 @@ def get_dataset():# Récupération du dataset des parcs et jardins à Sfax via l
     {{geocodeArea:sfax}}->.searchArea;
     nwr["leisure"="park"](area.searchArea);
     out geom;
+    """
 
     response = requests.post(url, data=query) # Envoi de la requête POST à l’API Overpass
 

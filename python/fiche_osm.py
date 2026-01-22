@@ -27,7 +27,8 @@ def node_to_md(data, filename):
 
 def get_node(osm_id):# Recuperation des donnees d’un node OpenStreetMap via l’API Overpass
     url = "https://overpass-api.de/api/interpreter" # URL de l’API Overpass
-
+    
+# Requete Overpass pour obtenir le node avec l’ID specifie
     query = f""" 
     [out:json];
     node({osm_id}); 

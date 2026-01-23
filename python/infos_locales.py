@@ -1,7 +1,6 @@
 import requests
 from md_to_html import convert
-# 1. Récupérer le dataset depuis Overpass API
-# 2. Calculer des statistiques simples  
+# 1. Recuperer le dataset depuis Overpass API
 def get_dataset():
     """
     Récupère tous les parcs dans une zone géographique donnée.
@@ -34,7 +33,7 @@ def get_dataset():
 
     return response.json()
 
-# 3. Générer une fiche Markdown
+# 2. calculer des statistiques
 def compute_statistics(data):
     """
     Calcule des statistiques simples sur les parcs.

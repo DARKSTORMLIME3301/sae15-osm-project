@@ -1,6 +1,5 @@
 from md_to_html import convert
 import requests
-import math
 import sys
 
 

@@ -8,6 +8,8 @@ Le projet SAE 1.05 a pour but de nous apprendre les bases de la programmation en
 Dans ce projet, nous utilisons les donnees d’OpenStreetMap grace a une API appelee Overpass API.
 Le projet permet de recuperer des donnees, de les traiter en Python, puis de creer des fichiers Markdown et HTML.
 
+Le projet est composé de trois scripts principaux : `fiche_osm.py`, `infos_locales.py` et `md_to_html.py`
+
 ## OpenStreetMap et les donnees
 
 OpenStreetMap est une grande base de donnees geographiques ouverte.
@@ -58,7 +60,7 @@ Le fichier md_to_html.py permet de convertir automatiquement les fichiers Markdo
 Cette fonction est utilisee dans les deux scripts `fiche_osm.py` et `infos_locales.py`.
 Cela permet d’eviter de repeter le meme code et de mieux organiser le projet.
 
-Difficultes rencontrees
+## Difficultes rencontrees
 
 En tant que debutant en Python, j’ai rencontre plusieurs difficultes :
 
@@ -72,7 +74,7 @@ En tant que debutant en Python, j’ai rencontre plusieurs difficultes :
 
 Ces difficultes m’ont aide a mieux comprendre les limites des donnees et des API.
 
-## Ameioration possible
+## Amelioration possible
 
 Une amelioration possible du projet serait d’ajouter une carte avec un marqueur.
 nous n'avons pas realise cette partie car nous n'avons  pas encore appris comment gerer les cartes.

@@ -1,0 +1,82 @@
+# Parcs dans la zone étudiée
+
+## Statistiques
+- Nombre total de parcs : 74
+- Parcs avec nom : 31
+- Parcs sans nom : 43
+
+## Liste des parcs
+- منتزه بيلاز
+- المنطقة الخضراء علي بن رباح
+- منتزه مرجانة
+- Oasis Parc
+- Parc Aquatique de Thyna
+- Parc des Princes
+- Ferme Hammadi Abid
+- Fun Lac
+- حديقة الحيوانات التوتة
+- Jardin
+- بارك المدينة تبرورة
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- حديقة عمومية
+- علي بن دالي
+- سركيناي - الحديقة الأثرية
+- Park Krida
+- المنجي سليم
+- متنزه طينة
+- Résidence du Gouverneur de Sfax
+- المرأة والطفل
+- حديقة وهران
+- Parc du Monument du 5 Août
+- Parc sans nom
+- Acholla
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- المنتزه
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Gonna
+- Parc sans nom
+- نادي كريم
+- Park Ouled Yeneg 1
+- Park Karma
+- Park Sidi Salem
+- Parc mouamla
+- Théatre Plein Air Sidi Mansour
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- Parc sans nom
+- TunSI
